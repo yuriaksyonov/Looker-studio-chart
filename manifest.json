@@ -1,11 +1,15 @@
 {
-  "name": "Conditional Chart with Placeholder",
-  "description": "Shows a bar chart or a 'No data' message if fewer than 2 rows exist.",
-  "resources": {
-    "js": ["main.js"],
-    "css": []
+  "visualization": {
+    "id": "conditional-placeholder-chart",
+    "label": "Conditional Chart with Placeholder",
+    "iconUrl": "https://raw.githubusercontent.com/yuriaksyonov/Looker-studio-chart/main/chart.svg",
+    "resource": "https://raw.githubusercontent.com/yuriaksyonov/Looker-studio-chart/main/index.html",
+    "jsFile": "https://raw.githubusercontent.com/yuriaksyonov/Looker-studio-chart/main/main.js",
+    "cssFile": ""
   },
-  "data": {
-    "data": true
-  }
+  "organization": {
+    "name": "Yuri Aksyonov",
+    "url": "https://github.com/yuriaksyonov"
+  },
+  "devMode": true
 }
