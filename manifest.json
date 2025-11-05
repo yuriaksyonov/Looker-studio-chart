@@ -2,10 +2,40 @@
   "visualization": {
     "id": "conditional-placeholder-chart",
     "label": "Conditional Chart with Placeholder",
-    "iconUrl": "https://raw.githubusercontent.com/yuriaksyonov/Looker-studio-chart/main/chart.svg",
-    "resource": "https://raw.githubusercontent.com/yuriaksyonov/Looker-studio-chart/main/index.html",
-    "jsFile": "https://raw.githubusercontent.com/yuriaksyonov/Looker-studio-chart/main/main.js",
-    "cssFile": ""
+    "iconUrl": "https://yuriaksyonov.github.io/Looker-studio-chart/chart.svg",
+    "resource": "https://yuriaksyonov.github.io/Looker-studio-chart/index.html",
+    "jsFile": "https://yuriaksyonov.github.io/Looker-studio-chart/main.js",
+    "cssFile": "",
+    "config": {
+      "data": [
+        {
+          "id": "default",
+          "label": "Data",
+          "dimensions": [
+            {"id": "dimID", "label": "Dimension Field", "min": 1, "max": 1}
+          ],
+          "metrics": [
+            {"id": "metricID", "label": "Metric Value", "min": 1, "max": 1}
+          ]
+        }
+      ],
+      "style": {
+        "elements": [
+          {
+            "type": "SECTION",
+            "label": "Conditional Visibility Settings",
+            "elements": [
+              {
+                "type": "TEXTINPUT", 
+                "id": "visibilityThreshold", 
+                "label": "Show Chart If Total Metric > Value",
+                "defaultValue": "1000"
+              }
+            ]
+          }
+        ]
+      }
+    }
   },
   "organization": {
     "name": "Yuri Aksyonov",
