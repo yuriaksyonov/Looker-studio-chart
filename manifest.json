@@ -1,0 +1,11 @@
+{
+  "name": "Conditional Chart with Placeholder",
+  "description": "Shows a bar chart or a 'No data' message if fewer than 2 rows exist.",
+  "resources": {
+    "js": ["main.js"],
+    "css": []
+  },
+  "data": {
+    "data": true
+  }
+}
